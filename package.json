@@ -1,0 +1,32 @@
+{
+  "name": "standup-tracker-agent",
+  "version": "1.0.0",
+  "description": "AI-powered agent tool for tracking team standup updates with intelligent questioning",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "standup": "ts-node src/cli/standup-cli.ts",
+    "chat": "ts-node src/cli/chat-cli.ts"
+  },
+  "keywords": ["standup", "tracking", "agent", "ai", "bedrock"],
+  "author": "Team Tracker",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.450.0",
+    "xlsx": "^0.18.5",
+    "commander": "^11.1.0",
+    "inquirer": "^9.2.12",
+    "chalk": "^4.1.2",
+    "moment": "^2.29.4",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "@types/inquirer": "^9.0.7",
+    "@types/uuid": "^9.0.6",
+    "typescript": "^5.2.2",
+    "ts-node": "^10.9.1"
+  }
+}
